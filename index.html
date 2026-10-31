@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Ábalo · Clínica dental e integral en Cádiz</title>
+<meta name="description" content="Valoración completa con plan de tratamiento por escrito y precio cerrado. Implantes, ortodoncia, estética dental, medicina estética, varices y fisioterapia en el centro de Cádiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B2B3C;--muted:#3D5866;--accent:#0B6E79;--soft:#F2F6F7;--line:#E3EAEC;--gold:#E8A33D}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:var(--accent)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.sec{padding:96px 0}
+.soft{background:var(--soft)}
+.dark{background:var(--ink);color:#fff}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--accent)}
+h1{margin:0;font-size:clamp(34px,5vw,58px);line-height:1.08;letter-spacing:-.03em;font-weight:800}
+h2{margin:0;font-size:clamp(28px,3.6vw,42px);line-height:1.15;letter-spacing:-.02em}
+h3{margin:0 0 6px;font-size:19px}
+p{margin:0}
+.muted{color:var(--muted)}
+.grid{display:grid;gap:20px}
+.btn{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border-radius:999px;font-weight:800;font-size:17px;text-decoration:none}
+.btn-main{background:var(--accent);color:#fff}
+.btn-ghost{background:#fff;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.topbar{background:var(--ink);color:#fff;font-size:14px}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-top:10px;padding-bottom:10px}
+.topbar a{color:#fff;font-weight:600;text-decoration:none}
+nav.main{border-bottom:1px solid var(--line)}
+nav.main .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}
+.logo{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.links{display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;font-size:15px;font-weight:500}
+.links a{color:var(--ink);text-decoration:none}
+.links a.btn{color:#fff;font-size:15px;min-height:44px;padding:10px 20px}
+.hero .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:56px;align-items:center;padding-top:72px;padding-bottom:72px}
+.pill{align-self:flex-start;background:#fff;border:1px solid #D5E1E4;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600}
+.stack{display:flex;flex-direction:column;gap:22px}
+.stats{display:flex;flex-wrap:wrap;gap:24px;font-size:14px;color:var(--muted)}
+.stats strong{color:var(--ink);font-size:20px}
+form.card{background:#fff;border-radius:20px;padding:32px;box-shadow:0 20px 50px rgba(11,43,60,.12);display:flex;flex-direction:column;gap:16px;scroll-margin-top:24px}
+.tag{align-self:flex-start;background:var(--gold);color:var(--ink);padding:4px 12px;border-radius:6px;font-size:12px;font-weight:800;letter-spacing:.06em}
+label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+input,select{min-height:48px;border:1.5px solid #C9D6DA;border-radius:10px;padding:0 14px;font:inherit;font-weight:400;background:#fff}
+label.check{flex-direction:row;gap:10px;font-weight:400;color:var(--muted);font-size:13px;align-items:flex-start}
+label.check input{min-height:0;width:20px;height:20px;margin:1px 0 0}
+button.submit{background:var(--accent);color:#fff;border:0;border-radius:999px;min-height:54px;font:inherit;font-size:17px;font-weight:800;cursor:pointer}
+.trust .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;padding-top:28px;padding-bottom:28px;text-align:center;font-size:14px;font-weight:600;color:var(--muted)}
+.trust{border-bottom:1px solid var(--line)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:56px}
+.box{background:var(--soft);border-radius:16px;padding:24px}
+.offer{max-width:1000px}
+.row{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:18px 22px;font-size:17px;font-weight:600}
+.row small{font-size:15px;color:#C7D6DB;font-weight:400}
+.row span{display:flex;gap:14px;align-items:center}
+.center{text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
+.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.svc{text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.svc:hover{border-color:var(--accent)}
+.svc .t{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--accent)}
+.svc .n{font-size:21px;font-weight:700}
+.svc .go{margin-top:auto;padding-top:8px;font-weight:700;color:var(--accent)}
+.steps{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.num{font-size:44px;font-weight:800;color:var(--accent)}
+.team{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.photo{aspect-ratio:4/5;border-radius:16px;background:#DCE6E9;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;font-weight:600}
+.review{background:#fff;border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.stars{color:#B7791F;font-size:18px;letter-spacing:3px}
+details{background:#fff;border-radius:14px}
+summary{cursor:pointer;list-style:none;padding:18px 22px;font-size:17px;font-weight:700;display:flex;justify-content:space-between;gap:16px;min-height:60px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font-size:22px;color:var(--accent)}
+details[open] summary::after{content:'−'}
+details p{padding:0 22px 20px;color:var(--muted)}
+.cta{background:var(--accent);color:#fff}
+.cta .btn-line{color:#fff;border:1.5px solid #fff}
+footer{background:var(--ink);color:#C7D6DB;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;padding-top:56px;padding-bottom:56px}
+footer .col{display:flex;flex-direction:column;gap:6px}
+footer b{color:#fff}
+.wa{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:#1F8F4E;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+<span>Plazas de valoración de este mes: <strong>quedan [Nº] huecos</strong></span>
+<span><a href="tel:+34956258554">956 25 85 54</a> · C/ General Muñoz Arenillas, 4 · Cádiz</span>
+</div></div>
+
+<nav class="main"><div class="wrap">
+<span class="logo">Clínica Ábalo<span style="color:var(--accent)">.</span></span>
+<div class="links">
+<a href="#especialidades">Especialidades</a><a href="#equipo">Equipo</a><a href="#opiniones">Opiniones</a><a href="#preguntas">Preguntas</a>
+<a class="btn btn-main" href="#cita">Reservar valoración</a>
+</div>
+</div></nav>
+
+<header class="hero soft"><div class="wrap">
+<div class="stack">
+<span class="pill">Clínica dental e integral en el centro de Cádiz · desde [AÑO]</span>
+<h1>Sal de tu primera visita sabiendo exactamente qué necesitas, cuánto cuesta y cuánto tardará.</h1>
+<p class="muted" style="font-size:19px;max-width:560px">Valoración completa con estudio digital y plan de tratamiento <strong style="color:var(--ink)">por escrito y con precio cerrado</strong>. Sin sorpresas a mitad de tratamiento. Sin presión para empezar.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+<a class="btn btn-main" href="#cita">Quiero mi Valoración Completa</a>
+<a class="btn btn-ghost" href="https://wa.me/34[MÓVIL]">Escribir por WhatsApp</a>
+</div>
+<div class="stats">
+<span><strong>[4,9]</strong> en Google · [Nº] reseñas</span>
+<span><strong>5</strong> especialidades bajo un mismo techo</span>
+<span><strong>9</strong> profesionales</span>
+</div>
+</div>
+
+<form class="card" id="cita" action="https://formspree.io/f/[TU-ID]" method="POST">
+<span class="tag">OFERTA DE BIENVENIDA</span>
+<h2 style="font-size:26px">Valoración Completa Ábalo</h2>
+<p class="muted" style="font-size:15px">Valorada en <s>[XX] €</s> · <strong style="color:var(--ink);font-size:22px">[PRECIO o GRATIS]</strong> para nuevos pacientes</p>
+<label>Nombre<input type="text" name="nombre" autocomplete="name" required></label>
+<label>Teléfono<input type="tel" name="telefono" autocomplete="tel" required></label>
+<label>¿Qué te preocupa?<select name="motivo">
+<option>Me falta algún diente (implantes)</option><option>Quiero alinear mis dientes (ortodoncia)</option><option>Estética dental / blanqueamiento</option><option>Me sangran las encías</option><option>Medicina estética facial</option><option>Caída del cabello</option><option>Varices</option><option>Dolor muscular o de espalda</option><option>Otro</option>
+</select></label>
+<label class="check"><input type="checkbox" name="privacidad" required>Acepto la <a href="https://clinicaabalo.com/politica-privacidad/">política de privacidad</a></label>
+<button class="submit" type="submit">Reservar mi valoración</button>
+<p class="muted" style="font-size:13px;text-align:center">Te llamamos en menos de [24 h] laborables para darte hora.</p>
+</form>
+</div></header>
+
+<div class="trust"><div class="wrap">
+<span>Estudio 3D y cirugía guiada</span><span>Precio cerrado por escrito</span><span>Financiación hasta [Nº] meses</span><span>Instalaciones nuevas en el centro</span>
+</div></div>
+
+<section class="sec"><div class="wrap two">
+<div class="stack" style="gap:18px">
+<span class="eyebrow">POR QUÉ LA GENTE APLAZA SU TRATAMIENTO</span>
+<h2>No es el miedo al dentista. Es no saber en qué te estás metiendo.</h2>
+<p class="muted" style="font-size:18px">Presupuestos que cambian, tratamientos que no terminan y nadie que te explique las opciones con calma. Por eso en Clínica Ábalo nada empieza hasta que tienes tu plan claro, por escrito y con el precio final.</p>
+</div>
+<div class="grid" style="gap:16px">
+<div class="box"><h3>Sabes qué necesitas</h3><p class="muted">Te enseñamos tu boca en pantalla y te explicamos cada opción, con sus pros y sus contras.</p></div>
+<div class="box"><h3>Sabes cuánto cuesta</h3><p class="muted">Precio cerrado por escrito. Si cambia algo, lo hablamos antes, nunca después.</p></div>
+<div class="box"><h3>Sabes cuánto tardará</h3><p class="muted">Calendario de citas desde el primer día, para que puedas organizarte.</p></div>
+</div>
+</div></section>
+
+<section class="sec dark"><div class="wrap offer stack" style="gap:32px">
+<div class="center"><span class="eyebrow" style="color:var(--gold)">TODO LO QUE INCLUYE TU VALORACIÓN</span><h2>Una primera visita que vale más de lo que cuesta</h2></div>
+<div class="grid" style="gap:12px">
+<div class="row"><span>✓ Exploración completa con tu especialista</span><small>Valor [XX] €</small></div>
+<div class="row"><span>✓ Radiografía / estudio digital (si lo necesitas)</span><small>Valor [XX] €</small></div>
+<div class="row"><span>✓ Plan de tratamiento por escrito con precio cerrado</span><small>Valor [XX] €</small></div>
+<div class="row"><span>✓ Simulación de tu resultado (estética e implantes)</span><small>Valor [XX] €</small></div>
+<div class="row"><span>✓ Bonus: limpieza profesional gratis si inicias tratamiento</span><small>Valor [XX] €</small></div>
+</div>
+<div class="center">
+<p style="font-size:18px;color:#C7D6DB">Valor total <s>[XXX] €</s> · Hoy para ti: <strong style="color:#fff;font-size:26px">[PRECIO o GRATIS]</strong></p>
+<p style="font-size:15px;color:#C7D6DB">Solo [Nº] valoraciones al mes para poder dedicar el tiempo que merece cada una.</p>
+<a class="btn btn-gold" href="#cita">Reservar mi plaza</a>
+</div>
+</div></section>
+
+<section class="sec" id="especialidades"><div class="wrap stack" style="gap:40px">
+<div class="stack" style="gap:14px;max-width:720px"><span class="eyebrow">UN SOLO CENTRO, UN SOLO PLAN</span><h2>Tu sonrisa, tu piel y tu cuerpo, coordinados por el mismo equipo</h2></div>
+<div class="grid cards">
+<a class="svc" href="#cita"><span class="t">MÁS SOLICITADO</span><span class="n">Implantes dentales</span><span class="muted">Estudio 3D y cirugía guiada por ordenador para volver a masticar con seguridad.</span><span class="go">Pedir valoración →</span></a>
+<a class="svc" href="#cita"><span class="t">ODONTOLOGÍA</span><span class="n">Ortodoncia invisible y brackets</span><span class="muted">Alineadores transparentes, brackets estéticos o metálicos, para jóvenes y adultos.</span><span class="go">Pedir valoración →</span></a>
+<a class="svc" href="#cita"><span class="t">ODONTOLOGÍA</span><span class="n">Estética dental</span><span class="muted">Carillas, blanqueamiento y diseño de sonrisa adaptado a tu cara.</span><span class="go">Pedir valoración →</span></a>
+<a class="svc" href="#cita"><span class="t">MEDICINA ESTÉTICA</span><span class="n">Estética facial y capilar</span><span class="muted">Tratamientos faciales y clínica capilar con valoración médica previa.</span><span class="go">Pedir valoración →</span></a>
+<a class="svc" href="#cita"><span class="t">CIRUGÍA VASCULAR</span><span class="n">Eliminación de varices</span><span class="muted">Técnicas sin cirugía, realizadas por cirujanos vasculares.</span><span class="go">Pedir valoración →</span></a>
+<a class="svc" href="#cita"><span class="t">BIENESTAR</span><span class="n">Fisioterapia y osteopatía</span><span class="muted">Para dolor de espalda, cervicales, lesiones y recuperación.</span><span class="go">Pedir valoración →</span></a>
+</div>
+</div></section>
+
+<section class="sec soft"><div class="wrap stack" style="gap:40px">
+<h2 style="text-align:center">Así de fácil es empezar</h2>
+<div class="grid steps">
+<div class="stack" style="gap:10px"><span class="num">1</span><h3>Reservas en 30 segundos</h3><p class="muted">Por el formulario, por WhatsApp o llamando. Te damos hora esta misma semana.</p></div>
+<div class="stack" style="gap:10px"><span class="num">2</span><h3>Valoración completa</h3><p class="muted">Exploración, pruebas digitales y una conversación sin prisas con tu especialista.</p></div>
+<div class="stack" style="gap:10px"><span class="num">3</span><h3>Tu plan por escrito</h3><p class="muted">Precio cerrado, plazos y financiación. Te lo llevas a casa y decides con calma.</p></div>
+</div>
+</div></section>
+
+<section class="sec" id="equipo"><div class="wrap stack" style="gap:40px">
+<div class="stack" style="gap:14px;max-width:720px"><span class="eyebrow">EN CLÍNICA ÁBALO DAMOS LA CARA</span><h2>Las personas que te van a atender, con nombre y apellidos</h2></div>
+<div class="grid team">
+<div class="stack" style="gap:10px"><div class="photo">[Foto profesional]</div><strong>Francisco Ábalo Lobo</strong><span class="muted" style="font-size:14px">[Especialidad · Nº colegiado · años de experiencia]</span></div>
+<div class="stack" style="gap:10px"><div class="photo">[Foto profesional]</div><strong>Lidia Márquez Rodríguez</strong><span class="muted" style="font-size:14px">[Especialidad · Nº colegiado · años de experiencia]</span></div>
+<div class="stack" style="gap:10px"><div class="photo">[Foto profesional]</div><strong>Irene Sánchez Martínez</strong><span class="muted" style="font-size:14px">[Especialidad · Nº colegiado · años de experiencia]</span></div>
+<div class="stack" style="gap:10px"><div class="photo">[Foto profesional]</div><strong>Javier Angulo Brieva</strong><span class="muted" style="font-size:14px">[Especialidad · Nº colegiado · años de experiencia]</span></div>
+</div>
+</div></section>
+
+<section class="sec soft" id="opiniones"><div class="wrap stack" style="gap:40px">
+<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:flex-end"><h2 style="max-width:640px">Lo que dicen nuestros pacientes en Google</h2><span style="font-weight:600"><strong style="font-size:28px">[4,9]</strong> / 5 · [Nº] reseñas verificadas</span></div>
+<div class="grid cards">
+<div class="review"><span class="stars" aria-label="5 estrellas">★★★★★</span><p class="muted">[Pegar aquí una reseña real de Google sobre implantes]</p><strong>[Nombre del paciente] · implantes</strong></div>
+<div class="review"><span class="stars" aria-label="5 estrellas">★★★★★</span><p class="muted">[Pegar aquí una reseña real de Google sobre ortodoncia]</p><strong>[Nombre del paciente] · ortodoncia</strong></div>
+<div class="review"><span class="stars" aria-label="5 estrellas">★★★★★</span><p class="muted">[Pegar aquí una reseña real de Google sobre medicina estética]</p><strong>[Nombre del paciente] · medicina estética</strong></div>
+</div>
+</div></section>
+
+<section class="sec"><div class="wrap center" style="max-width:900px;gap:18px">
+<svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#0B6E79" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+<h2>Garantía Precio Cerrado Ábalo</h2>
+<p class="muted" style="font-size:18px">El precio que firmas en tu plan es el precio que pagas. Si durante el tratamiento surge algo nuevo, te lo explicamos y decides tú antes de hacer nada.</p>
+</div></section>
+
+<section class="sec soft" id="preguntas"><div class="wrap stack" style="max-width:900px;gap:28px">
+<h2 style="text-align:center">Preguntas frecuentes</h2>
+<div class="grid" style="gap:12px">
+<details open><summary>¿Qué incluye exactamente la Valoración Completa?</summary><p>Exploración con tu especialista, pruebas digitales necesarias, explicación de tus opciones y un plan de tratamiento por escrito con precio cerrado y calendario.</p></details>
+<details><summary>¿Me obliga a empezar el tratamiento?</summary><p>No. Te llevas el plan a casa y decides con calma. Sin llamadas insistentes.</p></details>
+<details><summary>¿Puedo financiar mi tratamiento?</summary><p>Sí. Ofrecemos financiación hasta [Nº] meses [condiciones a confirmar por la clínica].</p></details>
+<details><summary>¿Qué pasa si el precio cambia durante el tratamiento?</summary><p>Con la Garantía Precio Cerrado, el precio firmado se respeta. Si aparece algo nuevo, te lo explicamos y decides antes de hacer nada.</p></details>
+<details><summary>¿Atendéis también estética, varices o fisioterapia?</summary><p>Sí. Somos un centro integral: odontología, medicina estética, clínica capilar, cirugía vascular y fisioterapia y osteopatía, coordinados por el mismo equipo.</p></details>
+</div>
+</div></section>
+
+<section class="cta"><div class="wrap center" style="max-width:900px;padding-top:88px;padding-bottom:88px;gap:20px">
+<h2 style="font-size:clamp(28px,4vw,46px)">Tu plan claro, por escrito y con precio cerrado. Empieza por aquí.</h2>
+<p style="font-size:18px">Quedan [Nº] valoraciones este mes.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+<a class="btn" style="background:#fff;color:var(--ink)" href="#cita">Reservar mi valoración</a>
+<a class="btn btn-line" href="tel:+34956258554">Llamar al 956 25 85 54</a>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<div class="col"><b style="font-size:20px">Clínica Ábalo</b><span>Clínica dental e integral en Cádiz.</span><span>[Nº registro sanitario]</span></div>
+<div class="col"><b>Contacto</b><span>C/ General Muñoz Arenillas, 4, local</span><span>11010 Cádiz</span><span>956 25 85 54</span><span>info@clinicaabalo.com</span></div>
+<div class="col"><b>Horario</b><span>Lunes y jueves: 10–14 / 15–21</span><span>Martes: 10–18</span><span>Miércoles: 10–14 / 16–20</span><span>Viernes: 10–14</span></div>
+</div></footer>
+
+<a class="wa" href="https://wa.me/34[MÓVIL]" aria-label="Escribir por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.3A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+
+</body>
+</html>
